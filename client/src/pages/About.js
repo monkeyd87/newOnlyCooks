@@ -13,7 +13,7 @@ function About() {
         description: 'Small donation'
     })
     async function handleToken(token, addresses) {
-        const response = await axios.post('http://localhost:3000/checkout', { token, donation })
+        const response = await axios.post('/checkout', { token, donation })
         // take response
         console.log(response.status)
         let error, status
